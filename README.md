@@ -1,25 +1,15 @@
-# ReduxSimpleStarter
+# React Weather App
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+## Overview
 
-### Getting Started
+Shows weather-related info using OpenWeatherMap API, built with React & Redux.
 
-There are two methods for getting started with this repo.
+## Getting Started
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+```bash
+# Install dependencies
 > npm install
-> npm start
-```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
+## Start server
 > npm start
 ```
