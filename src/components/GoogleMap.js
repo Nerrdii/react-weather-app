@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-export default class GoogleMap extends Component {
-  componentDidMount() {
-    new google.maps.Map(this.refs.map, {
-      zoom: 12,
-      center: {
-        lat: this.props.lat,
-        lng: this.props.lon
-      }
-    });
-  }
-
+export class MapContainer extends Component {
   render() {
-    return <div ref="map" />;
+    return (
+      <Map
+        google={this.props.google}
+        zoom={12}
+        initialCenter={{ lat: this.props.lat, lng: this.props.lng }}
+      />
+    );
   }
 }
+
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs'
+})(MapContainer);
