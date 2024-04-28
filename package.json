@@ -19,7 +19,7 @@
     "weather"
   ],
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.8",
     "google-maps-react": "^2.0.2",
     "lodash": "^4.17.21",
     "react": "^16.11.0",
