@@ -7,12 +7,12 @@ export class MapContainer extends Component {
       <Map
         google={this.props.google}
         zoom={12}
-        initialCenter={{ lat: this.props.lat, lng: this.props.lng }}
+        initialCenter={{ lat: this.props.lat, lng: this.props.lon }}
       />
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs'
+  apiKey: 'AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs',
 })(MapContainer);
